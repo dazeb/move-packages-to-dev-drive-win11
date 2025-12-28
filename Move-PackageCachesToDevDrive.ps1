@@ -53,6 +53,7 @@ $envVarsToCheck = @(
     "MAVEN_OPTS",
     "GRADLE_USER_HOME",
     "PNPM_HOME",
+    "pnpm_config_store_dir",
     "YARN_CACHE_FOLDER",
     "GOPATH",
     "GOCACHE",
@@ -248,7 +249,20 @@ $packageManagers = @(
         EnvVar = "PNPM_HOME"
         NewPath = "$devDrive\packages\pnpm"
         OldPaths = @(
-            "$env:LOCALAPPDATA\pnpm",
+            "$env:LOCALAPPDATA\pnpm"
+        )
+    },
+    @{
+        Name = "pnpm Store"
+        DetectionCommands = @("pnpm")
+        DetectionPaths = @(
+            "$env:LOCALAPPDATA\pnpm\pnpm.exe",
+            "$env:APPDATA\npm\pnpm.cmd",
+            "$env:ProgramFiles\nodejs\pnpm.cmd"
+        )
+        EnvVar = "pnpm_config_store_dir"
+        NewPath = "$devDrive\packages\pnpm-store"
+        OldPaths = @(
             "$env:LOCALAPPDATA\pnpm-store",
             "$env:USERPROFILE\.pnpm-store"
         )

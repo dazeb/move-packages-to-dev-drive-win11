@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -ExecutionPolicy Bypass -File \"D:\\dazeb\\Documents\\github\\dev-drive-cache-mover\\Move-PackageCachesToDevDrive.ps1\")"
+    ]
+  }
+}
