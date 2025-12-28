@@ -171,8 +171,16 @@ D:\
         └── packages\
 ```
 
-## References
+## Screenshots
 
+<img width="1105" height="616" alt="Screenshot 2025-12-28 160645" src="https://github.com/user-attachments/assets/3acccd0b-3798-4ab5-b906-8b57161e1183" />  
+
+### Deletion of old package cache confirmation  
+
+<img width="1101" height="619" alt="image" src="https://github.com/user-attachments/assets/11fe7aaf-0e0a-49db-8d24-9c72a23b888d" />
+
+
+## References
 - [Set up a Dev Drive on Windows 11 - Microsoft Learn](https://learn.microsoft.com/en-us/windows/dev-drive/)
 - [Dev Drive and Copy-on-Write for Developer Performance](https://devblogs.microsoft.com/engineering-at-microsoft/dev-drive-and-copy-on-write-for-developer-performance/)
 - [Storing package cache on Dev Drive](https://learn.microsoft.com/en-us/windows/dev-drive/#storing-package-cache-on-dev-drive)
